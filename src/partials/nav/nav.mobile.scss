@@ -1,0 +1,22 @@
+#m-nav { display: none; }
+
+@media (min-width: $mobile-min) and (max-width: $mobile-max) {
+  #m-nav { display: flex; } // Show mobile nav
+  #nav { display: none; }    // Hide normal nav
+
+  #m-nav {
+    height: 50px;
+    font-size: 10px;
+
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    margin-bottom: 12.5px;
+  }
+
+  #m-nav > span {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-header { text-align: right;}
+}

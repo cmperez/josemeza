@@ -1,0 +1,47 @@
+.case-paragraph,
+#case-info,
+#meta-info { margin-bottom: 25px; }
+
+.case-images {
+  flex-wrap: wrap;
+
+  margin-left: -12.5px;
+  margin-top: -12.5px;
+
+  @include calc("width", "100% + 12.5px");
+  > img {
+    height: 100%;
+    border: 12.5px solid white;
+  }
+}
+
+#go-up {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  &:hover { text-decoration: underline; }
+}
+
+@media (min-width: $hd-min) and (max-width: $hd-max) {
+  #case-info { flex-direction: row; }
+}
+
+@media (min-width: $desktop-min) and (max-width: $desktop-max) {
+  #case-info { flex-direction: row; }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  #case-info { flex-direction: column; }
+
+  .case-paragraph,
+  #case-info,
+  #meta-info { margin-bottom: 12.5px; }
+}
+
+@media (min-width: $mobile-min) and (max-width: $mobile-max) {
+  #case-info { flex-direction: column; }
+
+  .case-paragraph,
+  #case-info,
+  #meta-info { margin-bottom: 12.5px; }
+}

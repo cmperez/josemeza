@@ -1,0 +1,52 @@
+#main {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  overflow-y: auto;
+}
+
+.active { text-decoration: underline; }
+
+@media (min-width: $hd-min) and (max-width: $hd-max) {
+  #main {
+    top: 125px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+@media (min-width: $desktop-min) and (max-width: $desktop-max) {
+  #main {
+    top: 125px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  #main {
+    top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $mobile-min) and (max-width: $mobile-max) {
+  #main {
+    font-size: 10px;
+    top: 62.5px;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  #main {
+    font-size: 8px;
+    top: 62.5px;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+  }
+}

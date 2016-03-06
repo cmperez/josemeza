@@ -1,0 +1,39 @@
+<nav id="nav" ng-controller="ListCtrl" class="columns m-hide">
+
+  <span class="col-m-1-2 col-l-1-3 col-xl-1-4">
+    <a id="name"
+       class="c-hand"
+       href="#">Jos&eacute Meza</a>
+  </span>
+
+  <span class="col-m-1-2 col-l-2-3 col-xl-3-4 columns">
+
+    <span class="col-m-1-3 col-l-1-2 col-xl-1-2"
+          ng-class="{'nav-header': currentCase}">
+
+      <a class="c-hand"
+         ng-class="{'active': isActive('/about')}"
+         ng-if="!currentCase"
+         href="#/about">About</a>
+
+      <a class="nav-header" ng-if="currentCase">{{ projects[currentCase].header }}</a>
+
+    </span>
+
+    <span  id="list-and-tiles"
+           class="col-m-2-3 col-l-1-2 col-xl-1-2"
+           ng-show="isActive('/list') || isActive('/tiles')">
+
+      <a class="c-list"
+         ng-class="{'active': isActive('/list')}"
+         href="#/list">List</a>
+
+      <a class="c-tile"
+         ng-class="{'active': isActive('/tiles')}"
+         href="#/tiles">Tiles</a>
+
+    </span>
+
+  </span>
+
+</nav>

@@ -1,0 +1,78 @@
+#about > header { margin-bottom: 40px; }
+
+.about-header,
+#about > header > span:first-child {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.about-title { text-decoration: underline; }
+
+.about-header,
+.about-institutions,
+.about-jobs,
+.about-skills {
+  margin-bottom: 25px;
+}
+
+@media (min-width: $hd-min) and (max-width: $hd-max) {
+  #about {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #about > header > span:last-child { padding-top: 4px; }
+}
+
+@media (min-width: $desktop-min) and (max-width: $desktop-max) {
+  #about {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #about > header > span:last-child { padding-top: 4px; }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  #about-content,
+  #about > header { flex-direction: column; }
+
+  #about {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #bio { margin-bottom: 25px; }
+
+  .about-header,
+  .about-institutions,
+  .about-jobs,
+  .about-skills {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $mobile-min) and (max-width: $mobile-max) {
+  #about-content,
+  #about > header { flex-direction: column; }
+
+  #about {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  #bio { margin-bottom: 25px; }
+
+  .about-header,
+  #about > header > span:first-child {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-header,
+  .about-institutions,
+  .about-jobs,
+  .about-skills {
+    margin-bottom: 20px;
+  }
+}

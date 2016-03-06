@@ -1,0 +1,36 @@
+<div id="2x4" class="project-case" ng-controller="ListCtrl">
+
+  <div id="case-info" class="columns">
+
+    <span id="meta-info" class="s-no-pad m-no-pad col-l-1-3 col-xl-1-4">
+      <div>{{ projects[currentCase]['year'] }}</div>
+      <div>{{ projects[currentCase]['organization'] }}</div>
+      <div>{{ projects[currentCase]['title'] }}</div>
+    </span>
+
+    <span class="s-no-pad m-no-pad col-l-2-3 col-xl-3-4">
+      <div class="case-paragraph" ng-repeat="paragraph in projects[currentCase]['description']">
+        {{ paragraph }}
+      </div>
+    </span>
+
+  </div>
+
+  <div class="case-images columns">
+    <img src="assets/images/2x4/Clark1.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/CultureShed1.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/CultureShed2.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/CultureShed3.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/Gatsby1.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/Gatsby2.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/Gatsby3.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/Gatsby4.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/Hyundai.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/Hyundai1.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/Prada-Gatsby.jpg" class="img-1-2" />
+    <img src="assets/images/2x4/TheNowClark.gif" class="img-1-2" />
+  </div>
+
+  <a id="go-up" class="c-up" ng-click="" href="#">Up</a>
+
+</div>
