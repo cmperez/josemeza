@@ -18,8 +18,8 @@
 #go-up {
   float: right;
   margin-bottom: 25px;
-  
-  &:hover { text-decoration: underline; }
+
+  &:hover { cursor: pointer; }
 }
 
 @media (min-width: $hd-min) and (max-width: $hd-max) {

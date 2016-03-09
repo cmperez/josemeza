@@ -4,6 +4,8 @@ angular.module('app.list', [])
 
 .controller('ListCtrl', ['$rootScope', '$scope', '$location', function(
     $rootScope, $scope, $location) {
+
+  // Update current project case on state change
   $rootScope.$on('$stateChangeSuccess', function(event, toState){
     var name = toState.name;
     if (name === 'list' || name === 'tiles' || name === 'about') {
