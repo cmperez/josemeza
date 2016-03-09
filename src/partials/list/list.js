@@ -1,27 +1,28 @@
 'use strict';
 
-angular.module('app.list', ['ngRoute'])
-
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/list', {
-    templateUrl: 'src/partials/list/list.html',
-    controller: 'ListCtrl'
-  });
-}])
+angular.module('app.list', [])
 
 .controller('ListCtrl', ['$rootScope', '$scope', '$location', function(
     $rootScope, $scope, $location) {
-  let vm = $scope;
+  $rootScope.$on('$stateChangeSuccess', function(event, toState){
+    var name = toState.name;
+    if (name === 'list' || name === 'tiles' || name === 'about') {
+      $rootScope.currentCase = '';
+    } else {
+      $rootScope.currentCase = name;
+    }
+  });
 
-  vm.projects = {
+  $scope.projects = {
     'figma': {
       'header': 'Figma - Visual Identity',
       'year': '2016',
       'title': 'Visual Identity',
       'organization': 'Figma',
-      'description': ['paragraph 1', 'paragraph 2'],
-      'img': '',
-      'url': '/figma'
+      'description': ['blah blah blah', 'paragraph 2'],
+      'img': 'assets/images/Figma/morph-black-bdg.gif',
+      'width': 'img-1-4',
+      'url': 'figma'
     },
     'moma': {
       'header': '',
@@ -29,8 +30,9 @@ angular.module('app.list', ['ngRoute'])
       'title': 'Print',
       'organization': 'MoMA-Princeton',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': '',
-      'url': '/moma_princeton'
+      'img': 'assets/images/LAA/LAA0.jpg',
+      'width': 'img-1-4',
+      'url': 'moma_princeton'
     },
     'thesis': {
       'header': '',
@@ -38,8 +40,9 @@ angular.module('app.list', ['ngRoute'])
       'title': 'Environment & Print',
       'organization': 'Princeton Master\'s Thesis',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': '',
-      'url': '/thesis'
+      'img': 'assets/images/Thesis/thesis_7b.jpg',
+      'width': 'img-1-4',
+      'url': 'thesis'
     },
     'pentagram': {
       'header': '',
@@ -47,8 +50,9 @@ angular.module('app.list', ['ngRoute'])
       'title': 'Environment',
       'organization': 'Pentagram',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': '',
-      'url': '/pentagram'
+      'img': 'assets/images/Pentagram/pentagram.jpg',
+      'width': 'img-1-4',
+      'url': 'pentagram'
     },
     'psoa': {
       'header': '',
@@ -56,8 +60,9 @@ angular.module('app.list', ['ngRoute'])
       'title': 'Visual Identity',
       'organization': 'Princeton School of Architecture',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': '',
-      'url': '/psoa'
+      'img': 'assets/images/PSOA/psoa.gif',
+      'width': 'img-1-4',
+      'url': 'psoa'
     },
     'pidgin': {
       'header': '',
@@ -65,8 +70,9 @@ angular.module('app.list', ['ngRoute'])
       'title': 'Visual Identity & Print',
       'organization': 'Pidgin Magazine',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': '',
-      'url': '/pidgin_magazine'
+      'img': 'assets/images/Pidgin/Pidgin-02.png',
+      'width': 'img-1-4',
+      'url': 'pidgin_magazine'
     },
     '2x4': {
       'header': '2x4 - Environment & Activation',
@@ -74,8 +80,9 @@ angular.module('app.list', ['ngRoute'])
       'title': 'Environment & Activation',
       'organization': '2x4',
       'description': ['A sampling of marketing and visual design collateral for Figma\'s preview release that helped establish the company\'s emerging identity. A sampling of marketing and visual design collateral for Figma\'s preview release that helped establish the company\'s emerging identity. A sampling of marketing and visual design collateral for Figma\'s preview release that helped establish the company\'s emerging identity.', 'Figma is a sampling of marketing and visual design colateral. Figma is a sampling of marketing and visual design colateral. Figma is a sampling of marketing and visual design colateral.'],
-      'img': 'assets/images/2x4/Clark1.jpg',
-      'url': '/2x4'
+      'img': 'assets/images/2x4/2x4.jpg',
+      'width': 'img-1-4',
+      'url': '2x4'
     },
     'motion': {
       'header': '',
@@ -83,8 +90,9 @@ angular.module('app.list', ['ngRoute'])
       'title': 'Motion',
       'organization': 'M.Arch',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': '',
-      'url': '/m_arch_motion'
+      'img': 'assets/images/Survey/map1.jpg',
+      'width': 'img-1-4',
+      'url': 'm_arch_motion'
     },
     'architecture': {
       'header': '',
@@ -92,19 +100,22 @@ angular.module('app.list', ['ngRoute'])
       'title': 'Architecture',
       'organization': 'M.Arch',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': '',
-      'url': '/m_arch_architecture'
+      'img': 'assets/images/Cholo Urbanism/detail2.jpg',
+      'width': 'img-1-4',
+      'url': 'm_arch_architecture'
     }
   };
 
-  vm.isActive = function(path) {
+  $scope.isActive = function(path) {
     return ($location.path().substr(0, path.length) === path);
   };
 
-  vm.setCase = function(name) {
-    $rootScope.currentCase = name;
+  $scope.setCase = function(name) {
+
   };
 
-}])
+  $scope.goToTop = function() {
+    $('#main').animate({ scrollTop: 0 }, 'medium');
+  };
 
-.service;
+}]);

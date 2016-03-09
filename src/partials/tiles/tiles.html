@@ -1,13 +1,13 @@
-<div id="tiles" ng-controller="ListCtrl">
+<div id="tiles">
 
   <a ng-repeat="(name, project) in projects"
      ng-click="setCase(name)"
-     href="#{{ project.url }}"
-     class="tile-wrapper {{ project.tile-width }}">
+     ui-sref="{{ project.url }}"
+     class="tile-wrapper {{ project.width }}">
 
-    <!-- <img src="{{ project.tile-img }}" /> -->
+    <img src="{{ project.img }}" />
 
-    <div class="tile c-hand">
+    <div class="tile">
       <div>{{ project.year }}</div>
       <div>{{ project.organization }}</div>
       <div>{{ project.title }}</div>

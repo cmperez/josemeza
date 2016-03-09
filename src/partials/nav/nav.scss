@@ -9,11 +9,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  margin-bottom: 25px;
 }
-
-#name { text-decoration: none; }
 
 .nav-header { flex: 1 !important; }
 
@@ -53,25 +49,6 @@ nav {
     > a {
       text-align: right;
       padding-left: 50px;
-    }
-  }
-}
-
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
-  #nav {
-    height: 75px;
-    font-size: 18px;
-
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  #list-and-tiles {
-    display: flex;
-    > a {
-      width: 50%;
-      &:first-child { text-align: center; }
-      &:last-child { text-align: right; }
     }
   }
 }

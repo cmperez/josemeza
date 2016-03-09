@@ -1,44 +1,30 @@
 #tiles {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 
   @include calc("width", "100% + 25px");
 
-  margin-top: -11.5px;
+  margin-top: -12.5px;
   margin-left: -12.5px;
 }
 
 .tile-wrapper {
   border: 12.5px solid white;
-  position: relative;
   text-decoration: none;
-
-  > img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
-    opacity: 0.25;
-    transition: 0.3s opacity linear;
-
-    &:hover { opacity: 1; }
-  }
 }
 
 .tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  padding: 12.5px 12.5px 0 12.5px;
+}
 
-  border: 1px solid black;
-  line-height: 24px;
-  padding: 25px;
+audio, iframe, img, video {
+  max-width: 100%;
 }
 
 @media (min-width: $hd-min) and (max-width: $hd-max) {
   .tile-wrapper { min-width: 25%; }
+  video { max-height: 720px; }
 }
 
 @media (min-width: $desktop-min) and (max-width: $desktop-max) {

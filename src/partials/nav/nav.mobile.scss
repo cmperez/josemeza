@@ -1,16 +1,37 @@
 #m-nav { display: none; }
 
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  #m-nav { display: flex; } // Show mobile/tablet nav
+  #nav { display: none; }    // Hide normal nav
+
+  #m-nav {
+    height: 100px;
+    font-size: 18px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  #m-nav > span {
+    display: flex;
+    justify-content: space-between;
+
+    width: 50%;
+  }
+
+  .nav-header { text-align: right;}
+}
+
 @media (min-width: $mobile-min) and (max-width: $mobile-max) {
-  #m-nav { display: flex; } // Show mobile nav
+  #m-nav { display: flex; } // Show mobile/tablet nav
   #nav { display: none; }    // Hide normal nav
 
   #m-nav {
     height: 50px;
     font-size: 10px;
 
-    padding-left: 12.5px;
-    padding-right: 12.5px;
-    margin-bottom: 12.5px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   #m-nav > span {

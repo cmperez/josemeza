@@ -2,24 +2,38 @@
 
 // Declare app level module which depends on views, and components
 angular.module('app', [
-  'ngRoute',
+  'ui.router',
   'app.list',
-  'app.tiles',
-  'app.about',
-  'app.2x4',
+  'app.about'
 ]).
 
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/list'});
-}])
+config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise("/list");
 
-.controller('AppCtrl', ['$rootScope', '$scope', function($rootScope, $scope) {
-  $rootScope.currentState = '';
-
-  // $scope.$watch('$rootScope.currentState', function updateCase(newVal, oldVal) {
-  //   console.log('new val', newVal, 'old val', oldVal);
-  //
-  //   $rootScope.currentCase = newVal;
-  //   console.log('set case', $rootScope.currentCase);
-  // });
+  $stateProvider
+    .state('list', {
+      url: "/list",
+      templateUrl: "src/partials/list/list.html",
+      controller: 'ListCtrl'
+    })
+    .state('tiles', {
+      url: "/tiles",
+      templateUrl: "src/partials/tiles/tiles.html",
+      controller: 'ListCtrl'
+    })
+    .state('about', {
+      url: "/about",
+      templateUrl: "src/partials/about/about.html",
+      controller: 'AboutCtrl'
+    })
+    .state('figma', {
+      url: "/figma",
+      templateUrl: "src/partials/projects/figma/figma.html",
+      controller: 'ListCtrl'
+    })
+    .state('2x4', {
+      url: "/2x4",
+      templateUrl: "src/partials/projects/2x4/2x4.html",
+      controller: 'ListCtrl'
+    });
 }]);

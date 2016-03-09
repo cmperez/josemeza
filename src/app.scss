@@ -11,8 +11,6 @@ $desktop-max: 1024px;
 $hd-min: 1025px;
 $hd-max: 2440px;
 
-body { font-family: 'Theinhardt-Reg', Helvetica, sans-serif; }
-
 /** Mixins **/
 @mixin calc($key, $value) {
   #{$key}: -webkit-calc(#{$value});
@@ -32,13 +30,9 @@ body { font-family: 'Theinhardt-Reg', Helvetica, sans-serif; }
 	src: url(./assets/fonts/Theinhardt/TheinhardtThin.otf);
 }
 
-/** Custom cursor properties **/
-.c-hand   { cursor: url(../assets/icons/hand.png), auto; }
-.c-list   { cursor: url(../assets/icons/list.png), auto; }
-.c-tile   { cursor: url(../assets/icons/tiles.png), auto; }
-.c-up { cursor: url(../assets/icons/up.png), auto; }
-
 /** App styles **/
+body { font-family: 'Theinhardt-Reg', Helvetica, sans-serif; }
+
 @import "src/scss/reset.scss";
 @import "src/scss/grid.scss";
 @import "src/scss/main.scss";

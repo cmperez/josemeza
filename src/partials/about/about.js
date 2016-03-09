@@ -1,13 +1,6 @@
 'use strict';
 
-angular.module('app.about', ['ngRoute'])
-
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/about', {
-    templateUrl: 'src/partials/about/about.html',
-    controller: 'AboutCtrl'
-  });
-}])
+angular.module('app.about', [])
 
 .controller('AboutCtrl', ['$scope', function($scope) {
 
@@ -53,7 +46,7 @@ angular.module('app.about', ['ngRoute'])
       'title': 'Ateliers Jean Nouvel',
       'position': 'Architectural Designer',
       'dates': '2011 - 2012',
-      'duties': 'Schematic Drafting.<br>Digital and physical modeling and rendering.',
+      'duties': 'Schematic Drafting. Digital and physical modeling and rendering.',
     },
   ];
 

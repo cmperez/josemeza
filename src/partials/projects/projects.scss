@@ -16,9 +16,9 @@
 }
 
 #go-up {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
+  float: right;
+  margin-bottom: 25px;
+  
   &:hover { text-decoration: underline; }
 }
 

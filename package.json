@@ -1,11 +1,8 @@
 {
-  "name": "jose_personal",
+  "name": "Jose Meza",
   "version": "1.0.0",
-  "description": "Personal site.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Portfolio site.",
+  "main": "index.html",
   "author": "",
   "license": "ISC",
   "devDependencies": {
