@@ -1,7 +1,6 @@
 #tiles {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 
   @include calc("width", "100% + 25px");
 
@@ -12,6 +11,8 @@
 .tile-wrapper {
   border: 12.5px solid white;
   text-decoration: none;
+
+  align-self: stretch;
 }
 
 .tile {

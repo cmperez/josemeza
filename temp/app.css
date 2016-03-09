@@ -1,4 +1,15 @@
 /** Global variables **/
+[ui-view] {
+  transition: 0.4s linear opacity; }
+  [ui-view].ng-enter {
+    opacity: 0; }
+  [ui-view].ng-enter-active {
+    opacity: 1; }
+  [ui-view].ng-leave {
+    opacity: 1; }
+  [ui-view].ng-leave-active {
+    opacity: 0; }
+
 /** Mixins **/
 /** Custom font face **/
 @font-face {
@@ -301,7 +312,6 @@ nav {
 #tiles {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   width: -webkit-calc(100% + 25px);
   width: -moz-calc(100% + 25px);
   width: -ms-calc(100% + 25px);
@@ -311,7 +321,8 @@ nav {
 
 .tile-wrapper {
   border: 12.5px solid white;
-  text-decoration: none; }
+  text-decoration: none;
+  align-self: stretch; }
 
 .tile {
   padding: 12.5px 12.5px 0 12.5px; }
