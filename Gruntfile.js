@@ -5,14 +5,14 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				files: {
-					'temp/app.css': 'src/app.scss'
+					'dist/app.css': 'src/app.scss'
 				}
 			}
 		},
 
 		autoprefixer: {
       your_target: {
-        src: 'temp/app.css' // Replaces file in place, no dest needed.
+        src: 'dist/app.css' // Replaces file in place, no dest needed.
       }
     },
 
@@ -20,6 +20,21 @@ module.exports = function(grunt) {
 			css: {
 				files: 'src/**/*.scss',
 				tasks: ['sass']
+			}
+		},
+
+		imagemin: {
+			dynamic: {
+				files: [{
+					expand: true,
+					cwd: 'assets/images/',
+					src: [
+						'**/**/*.{png,jpg,gif}',
+						'**/*.{png,jpg,gif}',
+						'*.{png,jpg,gif}'
+					],
+					dest: 'dist/assets/compressed/'
+				}]
 			}
 		}
 
@@ -31,4 +46,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 	grunt.registerTask('serve' ,['sass', 'autoprefixer', 'watch']);
+	grunt.registerTask('build' ,['sass', 'autoprefixer', 'imagemin']);
 }

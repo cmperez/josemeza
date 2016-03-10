@@ -22,7 +22,7 @@ angular.module('app.list', [])
       'title': 'Visual Identity',
       'organization': 'Figma',
       'description': ['blah blah blah', 'paragraph 2'],
-      'img': 'assets/images/Figma/morph-black-bdg.gif',
+      'img': 'dist/assets/compressed/Figma/morph-black-bdg.gif',
       'width': 'img-1-4',
       'url': 'figma'
     },
@@ -32,7 +32,7 @@ angular.module('app.list', [])
       'title': 'Print',
       'organization': 'MoMA-Princeton',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': 'assets/images/LAA/LAA0.jpg',
+      'img': 'dist/assets/compressed/LAA/LAA0.jpg',
       'width': 'img-1-4',
       'url': 'moma_princeton'
     },
@@ -42,7 +42,7 @@ angular.module('app.list', [])
       'title': 'Environment & Print',
       'organization': 'Princeton Master\'s Thesis',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': 'assets/images/Thesis/thesis_7b.jpg',
+      'img': 'dist/assets/compressed/Thesis/thesis_7b.jpg',
       'width': 'img-1-4',
       'url': 'thesis'
     },
@@ -52,7 +52,7 @@ angular.module('app.list', [])
       'title': 'Environment',
       'organization': 'Pentagram',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': 'assets/images/Pentagram/pentagram.jpg',
+      'img': 'dist/assets/compressed/Pentagram/pentagram.jpg',
       'width': 'img-1-4',
       'url': 'pentagram'
     },
@@ -62,7 +62,7 @@ angular.module('app.list', [])
       'title': 'Visual Identity',
       'organization': 'Princeton School of Architecture',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': 'assets/images/PSOA/psoa.gif',
+      'img': 'dist/assets/compressed/PSOA/psoa.gif',
       'width': 'img-1-4',
       'url': 'psoa'
     },
@@ -72,7 +72,7 @@ angular.module('app.list', [])
       'title': 'Visual Identity & Print',
       'organization': 'Pidgin Magazine',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': 'assets/images/Pidgin/Pidgin-02.png',
+      'img': 'dist/assets/compressed/Pidgin/Pidgin-02.png',
       'width': 'img-1-4',
       'url': 'pidgin_magazine'
     },
@@ -82,7 +82,7 @@ angular.module('app.list', [])
       'title': 'Environment & Activation',
       'organization': '2x4',
       'description': ['A sampling of marketing and visual design collateral for Figma\'s preview release that helped establish the company\'s emerging identity. A sampling of marketing and visual design collateral for Figma\'s preview release that helped establish the company\'s emerging identity. A sampling of marketing and visual design collateral for Figma\'s preview release that helped establish the company\'s emerging identity.', 'Figma is a sampling of marketing and visual design colateral. Figma is a sampling of marketing and visual design colateral. Figma is a sampling of marketing and visual design colateral.'],
-      'img': 'assets/images/2x4/2x4.jpg',
+      'img': 'dist/assets/compressed/2x4/2x4.jpg',
       'width': 'img-1-4',
       'url': '2x4'
     },
@@ -92,7 +92,7 @@ angular.module('app.list', [])
       'title': 'Motion',
       'organization': 'M.Arch',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': 'assets/images/Survey/map1.jpg',
+      'img': 'dist/assets/compressed/Survey/map1.jpg',
       'width': 'img-1-4',
       'url': 'm_arch_motion'
     },
@@ -102,7 +102,7 @@ angular.module('app.list', [])
       'title': 'Architecture',
       'organization': 'M.Arch',
       'description': ['paragraph 1', 'paragraph 2'],
-      'img': 'assets/images/Cholo Urbanism/detail2.jpg',
+      'img': 'dist/assets/compressed/Cholo Urbanism/detail2.jpg',
       'width': 'img-1-4',
       'url': 'm_arch_architecture'
     }

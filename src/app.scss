@@ -11,14 +11,6 @@ $desktop-max: 1024px;
 $hd-min: 1025px;
 $hd-max: 2440px;
 
-[ui-view] {
-  transition: 0.4s linear opacity;
-  &.ng-enter { opacity: 0; }
-  &.ng-enter-active { opacity: 1; }
-  &.ng-leave { opacity: 1; }
-  &.ng-leave-active { opacity: 0; }
-}
-
 /** Mixins **/
 @mixin calc($key, $value) {
   #{$key}: -webkit-calc(#{$value});
