@@ -16,9 +16,9 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
       templateUrl: "src/partials/list/list.html",
       controller: 'ListCtrl'
     })
-    .state('tiles', {
-      url: "/tiles",
-      templateUrl: "src/partials/tiles/tiles.html",
+    .state('images', {
+      url: "/images",
+      templateUrl: "src/partials/tiles/images.html",
       controller: 'ListCtrl'
     })
     .state('about', {

@@ -3,28 +3,24 @@
   <span class="col-s-1-2">
 
     <a id="name"
-       class="c-hand"
-       href="#">Jos&eacute Meza</a>
+       ui-sref="list">Jos&eacute Meza</a>
 
     <a class="c-hand"
        ng-class="{'active': isActive('/about')}"
        ng-if="!currentCase"
-       href="#/about">About</a>
+       ui-sref="about">About</a>
 
   </span>
 
   <span class="col-s-1-2">
 
-      <a class="c-list"
-         ng-class="{'active': isActive('/list')}"
-         ng-show="isActive('/list') || isActive('/tiles')"
-         href="#/list">List</a>
-
-      <a class="c-tile"
-         ng-class="{'active': isActive('/tiles')}"
-         ng-show="isActive('/list') || isActive('/tiles')"
+      <a ng-class="{'active': isActive('/list')}"
          ng-if="!currentCase"
-         href="#/tiles">Tiles</a>
+         ui-sref="list">List</a>
+
+      <a ng-class="{'active': isActive('/images')}"
+         ng-if="!currentCase"
+         ui-sref="images">Images</a>
 
       <a ng-if="currentCase"
          ng-class="{'nav-header': currentCase}">{{ projects[currentCase].header }}</a>

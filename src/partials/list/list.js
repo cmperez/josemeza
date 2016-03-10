@@ -8,7 +8,7 @@ angular.module('app.list', [])
   // Update current project case on state change
   $rootScope.$on('$stateChangeSuccess', function(event, toState){
     var name = toState.name;
-    if (name === 'list' || name === 'tiles' || name === 'about') {
+    if (name === 'list' || name === 'images' || name === 'about') {
       $rootScope.currentCase = '';
     } else {
       $rootScope.currentCase = name;

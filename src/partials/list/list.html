@@ -1,37 +1,22 @@
 <div id="list">
 
-  <div class="columns">
+  <a ui-sref="{{ project.url }}"
+     ng-repeat="(name, project) in projects"
+     class="list-row columns">
 
-    <!-- Column 1 -->
-    <span id="list-col-1" class="col-s-1-2 col-m-1-2 col-l-1-3 col-xl-1-4">
-
-      <span>
-        <div class="list-row" ng-repeat="(name, project) in projects">
-          <span class="list-year">{{ project.year }}</span>
-        </div>
+    <span class="list-group col-s-1-2 col-m-1-2 col-l-1-3 col-xl-1-4">
+      <span class="list-year">
+        <span>{{ project.year }}</span>
       </span>
-
       <span>
-        <div class="list-row"
-             ng-repeat="(name, project) in projects"
-             ng-click="setCase(name)">
-          <span>
-            <a ui-sref="{{ project.url }}">{{ project.title }}</a>
-          </span>
-        </div>
+        {{ project.title }}
       </span>
-
     </span>
-    <!-- End of Column 1 -->
 
-    <!-- Column 2 -->
-    <span  class="col-s-1-2 col-m-1-2 col-l-1-3 col-xl-1-4">
-      <div class="list-row" ng-repeat="(name, project) in projects">
-        <span>{{ project.organization }}</span>
-      </div>
+    <span class="col-s-1-2 col-m-1-2 col-l-1-3 col-xl-1-4">
+      {{ project.organization }}
     </span>
-    <!-- End of Column 2 -->
 
-  </div>
+  </a>
 
 </div>
