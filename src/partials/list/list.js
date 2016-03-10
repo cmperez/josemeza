@@ -34,7 +34,7 @@ angular.module('app.list', [])
       'description': ['paragraph 1', 'paragraph 2'],
       'img': 'dist/assets/compressed/LAA/LAA0.jpg',
       'width': 'img-1-4',
-      'url': 'moma_princeton'
+      'url': 'moma'
     },
     'thesis': {
       'header': '',
@@ -74,7 +74,7 @@ angular.module('app.list', [])
       'description': ['paragraph 1', 'paragraph 2'],
       'img': 'dist/assets/compressed/Pidgin/Pidgin-02.png',
       'width': 'img-1-4',
-      'url': 'pidgin_magazine'
+      'url': 'pidgin'
     },
     '2x4': {
       'header': '2x4 - Environment & Activation',
@@ -94,7 +94,7 @@ angular.module('app.list', [])
       'description': ['paragraph 1', 'paragraph 2'],
       'img': 'dist/assets/compressed/Survey/map1.jpg',
       'width': 'img-1-4',
-      'url': 'm_arch_motion'
+      'url': 'motion'
     },
     'architecture': {
       'header': '',
@@ -104,7 +104,7 @@ angular.module('app.list', [])
       'description': ['paragraph 1', 'paragraph 2'],
       'img': 'dist/assets/compressed/Cholo Urbanism/detail2.jpg',
       'width': 'img-1-4',
-      'url': 'm_arch_architecture'
+      'url': 'architecture'
     }
   };
 
