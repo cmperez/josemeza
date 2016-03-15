@@ -28,6 +28,12 @@
 .img-2-3 { width: 66.6666%; }
 .img-1 { width: 100%; }
 
+// Image offsets
+// [class*='off-'] { padding-left: 12.5px; }
+
+.off-1-4 { margin-left: 25%; }
+.off-1-2 { margin-left: 50%; }
+
 @media (min-width: $hd-min) and (max-width: $hd-max) {
   .col-xl-1-4 { flex: 0.25; }
   .col-xl-1-2 { flex: 0.5; }
@@ -76,4 +82,9 @@
   .col-s-1-3 { flex: 0.3333; }
   .col-s-2-3 { flex: 0.6666; }
   .col-s-1 { flex: 1; }
+
+  // Force all images to be full width for mobile screen sizes.
+  [class*='img-'] {
+    width: 100% !important;
+  }
 }

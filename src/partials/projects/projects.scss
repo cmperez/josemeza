@@ -5,13 +5,13 @@
 .case-images {
   flex-wrap: wrap;
 
-  margin-left: -12.5px;
-  margin-top: -12.5px;
-
-  @include calc("width", "100% + 12.5px");
+  width: 100%;
   > img {
     height: 100%;
-    border: 12.5px solid white;
+    margin-bottom: 25px;
+
+    // padding-left: 12.5px;
+    // padding-right: 12.5px;
   }
 }
 
@@ -22,6 +22,26 @@
 
   &:hover { cursor: pointer; }
 }
+
+.center { text-align: center; }
+
+.case-section {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.case-caption {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 150%;
+  margin-top: 12.5px;
+  margin-bottom: 25px;
+}
+
+.case-paragraph,
+#meta-info { line-height: 150%; }
 
 @media (min-width: $hd-min) and (max-width: $hd-max) {
   #case-info { flex-direction: row; }
