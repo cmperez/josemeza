@@ -2,8 +2,8 @@
 
 angular.module('app.list', [])
 
-.controller('ListCtrl', ['$rootScope', '$scope', '$location', function(
-    $rootScope, $scope, $location) {
+.controller('ListCtrl', ['$rootScope', '$scope', '$location', '$state', function(
+    $rootScope, $scope, $location, $state) {
 
   // Update current project case on state change
   $rootScope.$on('$stateChangeSuccess', function(event, toState){
@@ -132,12 +132,15 @@ angular.module('app.list', [])
     return ($location.path().substr(0, path.length) === path);
   };
 
-  $scope.setCase = function(name) {
-
+  $scope.goToPrevious = function() {
+    var states = $state.get();
+    console.log('going to previous state', states);
   };
 
-  $scope.goToTop = function() {
-    $('#main').animate({ scrollTop: 0 }, 'medium');
+  $scope.goToNext = function() {
+    // $('#main').animate({ scrollTop: 0 }, 'medium');
+    var states = $state.get();
+    console.log('going to next state', states);
   };
 
 }]);

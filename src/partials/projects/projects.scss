@@ -15,13 +15,16 @@
   }
 }
 
-#go-up {
-  float: right;
+#previous,
+#next {
   margin-bottom: 25px;
   margin-top: 25px;
 
   &:hover { cursor: pointer; }
 }
+
+#previous { float: left; }
+#next { float: right; }
 
 .center { text-align: center; }
 

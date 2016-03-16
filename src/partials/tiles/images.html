@@ -1,7 +1,6 @@
 <div id="tiles">
 
   <a ng-repeat="(name, project) in projects"
-     ng-click="setCase(name)"
      ui-sref="{{ project.url }}"
      class="tile-wrapper {{ project.width }}">
 
