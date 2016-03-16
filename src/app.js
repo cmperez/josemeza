@@ -3,6 +3,7 @@
 // Declare app level module which depends on views, and components
 angular.module('app', [
   'ui.router',
+  'ngAnimate',
   'app.list',
   'app.about'
 ]).

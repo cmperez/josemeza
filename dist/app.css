@@ -168,6 +168,11 @@ a {
   bottom: 0px;
   left: 0px;
   overflow-y: auto; }
+  #main.ng-enter {
+    transition: .5s;
+    opacity: 0; }
+  #main.ng-enter-active {
+    opacity: 1; }
 
 .active {
   text-decoration: underline; }
