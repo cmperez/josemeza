@@ -133,14 +133,41 @@ angular.module('app.list', [])
   };
 
   $scope.goToPrevious = function() {
-    var states = $state.get();
-    console.log('going to previous state', states);
+    var states = $state.get().splice(4);
+    var current = $state.$current.name;
+    var currentInd = states.indexOf(current);
+    var previous = '';
+
+    for (var i = 0; i < states.length; i++) {
+      if (states[i].name === current) {
+        if (i === 0) {
+          previous = states[states.length-1].name;
+        } else {
+          previous = states[i-1].name;
+        }
+      }
+    }
+
+    $state.go(previous);
   };
 
   $scope.goToNext = function() {
-    // $('#main').animate({ scrollTop: 0 }, 'medium');
-    var states = $state.get();
-    console.log('going to next state', states);
+    var states = $state.get().splice(4);
+    var current = $state.$current.name;
+    var currentInd = states.indexOf(current);
+    var next = '';
+
+    for (var i = 0; i < states.length; i++) {
+      if (states[i].name === current) {
+        if (i === states.length - 1) {
+          next = states[0].name;
+        } else {
+          next = states[i+1].name;
+        }
+      }
+    }
+
+    $state.go(next);
   };
 
 }]);
