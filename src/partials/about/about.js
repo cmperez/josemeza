@@ -46,7 +46,7 @@ angular.module('app.about', [])
       'title': 'Ateliers Jean Nouvel',
       'position': 'Architectural Designer',
       'dates': '2011 - 2012',
-      'duties': 'Schematic Drafting. Digital and physical modeling and rendering.',
+      'duties': 'Digital and physical modeling and rendering.',
     },
   ];
 

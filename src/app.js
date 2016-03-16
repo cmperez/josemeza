@@ -72,11 +72,6 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
       templateUrl: "src/partials/projects/2x4.html",
       controller: 'ListCtrl'
     })
-    .state('motion', {
-      url: "/motion",
-      templateUrl: "src/partials/projects/motion.html",
-      controller: 'ListCtrl'
-    })
     .state('architecture', {
       url: "/architecture",
       templateUrl: "src/partials/projects/architecture.html",
