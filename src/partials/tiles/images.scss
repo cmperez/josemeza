@@ -3,19 +3,20 @@
 
   @include calc("width", "100% + 25px");
 
-  margin-top: -12.5px;
   margin-left: -12.5px;
 }
 
 .tile-wrapper {
-  border: 12.5px solid white;
-  text-decoration: none;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  margin-bottom: 25px;
 
+  text-decoration: none;
   align-self: stretch;
 }
 
 .tile {
-  padding: 12.5px 12.5px 0 12.5px;
+  padding: 12.5px 12.5px 0 0;
 }
 
 audio, iframe, img, video {

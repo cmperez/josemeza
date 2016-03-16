@@ -174,6 +174,9 @@ a {
   #main.ng-enter-active {
     opacity: 1; }
 
+.no-left-pad {
+  padding-left: 0px !important; }
+
 .active {
   text-decoration: underline; }
 
@@ -307,7 +310,13 @@ nav {
   justify-content: flex-start;
   align-items: flex-start; }
 
-@media (min-width: 426px) and (max-width: 2440px) {
+@media (min-width: 769px) and (max-width: 2440px) {
+  .list-year {
+    width: 75px; }
+
+  .list-group {
+    padding-right: 0px; } }
+@media (min-width: 426px) and (max-width: 768px) {
   .list-year {
     width: 75px; } }
 @media (min-width: 0px) and (max-width: 425px) {
@@ -322,16 +331,17 @@ nav {
   width: -moz-calc(100% + 25px);
   width: -ms-calc(100% + 25px);
   width: calc(100% + 25px);
-  margin-top: -12.5px;
   margin-left: -12.5px; }
 
 .tile-wrapper {
-  border: 12.5px solid white;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  margin-bottom: 25px;
   text-decoration: none;
   align-self: stretch; }
 
 .tile {
-  padding: 12.5px 12.5px 0 12.5px; }
+  padding: 12.5px 12.5px 0 0; }
 
 audio, iframe, img, video {
   max-width: 100%; }
@@ -389,17 +399,11 @@ audio, iframe, img, video {
 @media (min-width: 1025px) and (max-width: 2440px) {
   #about {
     font-size: 16px;
-    line-height: 24px; }
-
-  #about > header > span:last-child {
-    padding-top: 4px; } }
+    line-height: 24px; } }
 @media (min-width: 769px) and (max-width: 1024px) {
   #about {
     font-size: 16px;
-    line-height: 24px; }
-
-  #about > header > span:last-child {
-    padding-top: 4px; } }
+    line-height: 24px; } }
 @media (min-width: 426px) and (max-width: 768px) {
   #about-content,
   #about > header {
@@ -445,12 +449,24 @@ audio, iframe, img, video {
 #meta-info {
   margin-bottom: 25px; }
 
+#meta-info {
+  padding-right: 0px; }
+
 .case-images {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 100%; }
+  width: -webkit-calc(100% + 25px);
+  width: -moz-calc(100% + 25px);
+  width: -ms-calc(100% + 25px);
+  width: calc(100% + 25px);
+  margin-left: -12.5px; }
   .case-images > img {
     height: 100%;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    min-width: 25%;
+    padding-left: 12.5px;
+    padding-right: 12.5px; }
 
 #previous,
 #next {
