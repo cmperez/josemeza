@@ -31,6 +31,16 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
       templateUrl: "src/partials/projects/figma.html",
       controller: 'ListCtrl'
     })
+    .state('princeton-mellon', {
+      url: "/princeton-mellon",
+      templateUrl: "src/partials/projects/princeton-mellon.html",
+      controller: 'ListCtrl'
+    })
+    .state('highline', {
+      url: "/highline",
+      templateUrl: "src/partials/projects/highline.html",
+      controller: 'ListCtrl'
+    })
     .state('moma', {
       url: "/moma",
       templateUrl: "src/partials/projects/moma.html",
@@ -39,6 +49,11 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
     .state('thesis', {
       url: "/thesis",
       templateUrl: "src/partials/projects/thesis.html",
+      controller: 'ListCtrl'
+    })
+    .state('thesis-catalog', {
+      url: "/thesis-catalog",
+      templateUrl: "src/partials/projects/thesis-catalog.html",
       controller: 'ListCtrl'
     })
     .state('pentagram', {
