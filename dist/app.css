@@ -294,18 +294,19 @@ a {
     padding-right: 75px; } }
 @media (min-width: 426px) and (max-width: 768px) {
   #main {
+    font-size: 14px;
     top: 75px;
     padding-left: 50px;
     padding-right: 50px; } }
 @media (min-width: 0px) and (max-width: 425px) {
   #main {
-    font-size: 10px;
+    font-size: 12px;
     top: 75px;
     padding-left: 25px;
     padding-right: 25px; } }
 @media (min-width: 0px) and (max-width: 375px) {
   #main {
-    font-size: 8px;
+    font-size: 12px;
     top: 75px;
     padding-left: 25px;
     padding-right: 25px; } }
@@ -692,6 +693,14 @@ audio, iframe, img, video {
   margin-bottom: 25px; 
   padding-left: 12.5px;
   padding-right: 12.5px; }
+
+@media (min-width: 426px) and (max-width: 768px) {
+  #case-section {
+    font-size: 14px; } }
+
+@media (min-width: 0px) and (max-width: 425px) {
+  #case-section {
+  font-size: 12px; } }
 
 .case-caption {
   display: -webkit-box;
