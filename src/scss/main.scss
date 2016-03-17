@@ -4,7 +4,8 @@
   bottom: 0px;
   left: 0px;
 
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
   &.ng-enter {
     transition: .5s;
