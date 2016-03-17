@@ -40,7 +40,7 @@ angular.module('app.about', [])
       'title': 'Princeton School of Architecture',
       'position': 'Freelance Designer',
       'dates': 'May 2014 - present',
-      'duties': 'Graphic and identity design',
+      'duties': 'Graphic and identity design.',
     },
     {
       'title': 'Ateliers Jean Nouvel',
