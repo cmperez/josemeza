@@ -4,9 +4,11 @@
 @font-face {
   font-family: Theinhardt-Reg;
   src: url(./assets/fonts/Theinhardt/TheinhardtReg.otf); }
+
 @font-face {
   font-family: Theinhardt-Thin;
   src: url(./assets/fonts/Theinhardt/TheinhardtThin.otf); }
+
 /** App styles **/
 body {
   font-family: 'Theinhardt-Reg', Helvetica, sans-serif; }
