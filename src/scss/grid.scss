@@ -86,5 +86,6 @@
   // Force all images to be full width for mobile screen sizes.
   [class*='img-'] {
     width: 100% !important;
+    margin-left: 0% !important;
   }
 }
