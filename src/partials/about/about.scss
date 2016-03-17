@@ -1,4 +1,4 @@
-#about > header { margin-bottom: 40px; }
+#about > header { margin-bottom: 50px; }
 
 .about-header,
 #about > header > span:first-child {
@@ -53,22 +53,26 @@
   #about > header { flex-direction: column; }
 
   #about {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
-  #bio { margin-bottom: 25px; }
+  #about > header { margin-bottom: 12.5px; }
+
+  #bio { 
+    margin-bottom: 25px;
+  }
 
   .about-header,
   #about > header > span:first-child {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .about-header,
   .about-institutions,
   .about-jobs,
   .about-skills {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }

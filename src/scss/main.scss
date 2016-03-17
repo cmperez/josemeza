@@ -22,20 +22,12 @@
 @media (min-width: $hd-min) and (max-width: $hd-max) {
   #main {
     top: 75px;
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-}
-
-@media (min-width: $desktop-min) and (max-width: $desktop-max) {
-  #main {
-    top: 75px;
     padding-left: 100px;
     padding-right: 100px;
   }
 }
 
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+@media (min-width: $desktop-min) and (max-width: $desktop-max) {
   #main {
     top: 75px;
     padding-left: 75px;
@@ -43,18 +35,26 @@
   }
 }
 
-@media (min-width: $mobile-min) and (max-width: $mobile-max) {
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
   #main {
-    font-size: 10px;
     top: 75px;
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
+@media (min-width: $mobile-min) and (max-width: $mobile-max) {
+  #main {
+    font-size: 12px;
+    top: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 375px) {
   #main {
-    font-size: 8px;
+    font-size: 12px;
     top: 75px;
     padding-left: 25px;
     padding-right: 25px;

@@ -4,11 +4,9 @@
 @font-face {
   font-family: Theinhardt-Reg;
   src: url(./assets/fonts/Theinhardt/TheinhardtReg.otf); }
-
 @font-face {
   font-family: Theinhardt-Thin;
   src: url(./assets/fonts/Theinhardt/TheinhardtThin.otf); }
-
 /** App styles **/
 body {
   font-family: 'Theinhardt-Reg', Helvetica, sans-serif; }
@@ -70,11 +68,23 @@ a {
 .img-2-3 {
   width: 66.6666%; }
 
+.img-3-4 {
+  width: 75%; }
+
 .img-1 {
   width: 100%; }
 
+.off-125 {
+  margin-right: 12.5%; }
+
+.off-1-8 {
+  margin-left: 12.5%; }
+
 .off-1-4 {
   margin-left: 25%; }
+
+.off-25 {
+  margin-right: 25%; }
 
 .off-1-2 {
   margin-left: 50%; }
@@ -185,27 +195,27 @@ a {
 @media (min-width: 1025px) and (max-width: 2440px) {
   #main {
     top: 75px;
-    padding-left: 150px;
-    padding-right: 150px; } }
-@media (min-width: 769px) and (max-width: 1024px) {
-  #main {
-    top: 75px;
     padding-left: 100px;
     padding-right: 100px; } }
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   #main {
     top: 75px;
     padding-left: 75px;
     padding-right: 75px; } }
-@media (min-width: 0px) and (max-width: 425px) {
+@media (min-width: 426px) and (max-width: 768px) {
   #main {
-    font-size: 10px;
     top: 75px;
     padding-left: 50px;
     padding-right: 50px; } }
+@media (min-width: 0px) and (max-width: 425px) {
+  #main {
+    font-size: 12px;
+    top: 75px;
+    padding-left: 25px;
+    padding-right: 25px; } }
 @media (min-width: 0px) and (max-width: 375px) {
   #main {
-    font-size: 8px;
+    font-size: 12px;
     top: 75px;
     padding-left: 25px;
     padding-right: 25px; } }
@@ -232,8 +242,8 @@ nav {
   #nav {
     height: 75px;
     font-size: 20px;
-    padding-left: 150px;
-    padding-right: 150px; }
+    padding-left: 100px;
+    padding-right: 100px; }
 
   #list-and-tiles {
     display: flex;
@@ -245,8 +255,8 @@ nav {
   #nav {
     height: 75px;
     font-size: 18px;
-    padding-left: 100px;
-    padding-right: 100px; }
+    padding-left: 75px;
+    padding-right: 75px; }
 
   #list-and-tiles {
     display: flex;
@@ -267,8 +277,8 @@ nav {
   #m-nav {
     height: 75px;
     font-size: 18px;
-    padding-left: 75px;
-    padding-right: 75px; }
+    padding-left: 50px;
+    padding-right: 50px; }
 
   #m-nav > span {
     display: flex;
@@ -286,9 +296,9 @@ nav {
 
   #m-nav {
     height: 75px;
-    font-size: 10px;
-    padding-left: 50px;
-    padding-right: 50px; }
+    font-size: 14px;
+    padding-left: 25px;
+    padding-right: 25px; }
 
   #m-nav > span {
     display: flex;
@@ -299,12 +309,13 @@ nav {
 @media (min-width: 0px) and (max-width: 375px) {
   #m-nav {
     padding-left: 25px;
-    padding-right: 25px; } }
+    padding-right: 25px;
+    font-size: 12px; } }
 #list {
   width: 100%; }
 
 .list-row {
-  margin-bottom: 5px; }
+  margin-bottom: 10px; }
 
 .list-group {
   display: flex;
@@ -382,7 +393,7 @@ audio, iframe, img, video {
   .tile {
     line-height: 14px; } }
 #about > header {
-  margin-bottom: 40px; }
+  margin-bottom: 50px; }
 
 .about-header,
 #about > header > span:first-child {
@@ -429,22 +440,25 @@ audio, iframe, img, video {
     flex-direction: column; }
 
   #about {
-    font-size: 10px;
-    line-height: 14px; }
+    font-size: 12px;
+    line-height: 18px; }
+
+  #about > header {
+    margin-bottom: 12.5px; }
 
   #bio {
     margin-bottom: 25px; }
 
   .about-header,
   #about > header > span:first-child {
-    font-size: 12px;
-    line-height: 18px; }
+    font-size: 16px;
+    line-height: 24px; }
 
   .about-header,
   .about-institutions,
   .about-jobs,
   .about-skills {
-    margin-bottom: 20px; } }
+    margin-bottom: 25px; } }
 /** Project sheets **/
 .case-paragraph,
 #case-info,
@@ -488,7 +502,8 @@ audio, iframe, img, video {
   text-align: center; }
 
 .case-section {
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 150%;
   margin-top: 25px;
   margin-bottom: 25px;
   padding-left: 12.5px;
@@ -529,7 +544,11 @@ audio, iframe, img, video {
     margin-bottom: 12.5px; }
 
   .case-section {
-    font-size: 14px; } }
+    font-size: 12px;
+    line-height: 150%; } }
 @media (min-width: 0px) and (max-width: 320px) {
   .case-section {
-    font-size: 12px; } }
+    font-size: 12px;
+    line-height: 150%; } }
+
+/*# sourceMappingURL=app.css.map */
