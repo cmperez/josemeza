@@ -39,6 +39,9 @@
   font-size: 20px;
   margin-top: 25px;
   margin-bottom: 25px;
+
+  padding-left: 12.5px;
+  padding-right: 12.5px;
 }
 
 .case-caption {
@@ -75,4 +78,9 @@
   .case-paragraph,
   #case-info,
   #meta-info { margin-bottom: 12.5px; }
+  .case-section { font-size: 14px; } // Case section font-size change!
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .case-section { font-size: 12px; } // Case section font-size change!
 }
