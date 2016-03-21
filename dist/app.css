@@ -700,7 +700,9 @@ audio, iframe, img, video {
           flex-direction: column;
   line-height: 150%;
   margin-top: 12.5px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  padding-left: 12.5px;
+  padding-right: 12.5px; }
 
 .case-paragraph,
 #meta-info {
