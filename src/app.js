@@ -76,10 +76,5 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
       url: "/architecture",
       templateUrl: "src/partials/projects/architecture.html",
       controller: 'ListCtrl'
-    })
-    .state('figma-process', {
-      url: "/figma-process",
-      templateUrl: "src/partials/projects/figma-process.html",
-      controller: 'ListCtrl'
     });
 }]);
