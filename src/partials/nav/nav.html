@@ -1,13 +1,14 @@
 <nav id="nav" ng-controller="ListCtrl" class="columns">
 
-  <span class="col-m-1-2 col-l-1-3 col-xl-1-4">
+
+  <!--<span class="col-m-1-2 col-l-1-3 col-xl-1-4">
     <a id="name"
        ui-sref="list">Jos&eacute Meza</a>
-  </span>
+  </span>-->
 
-  <span class="col-m-1-2 col-l-2-3 col-xl-3-4 columns no-left-pad">
+  <span class="col-m-1-2 col-l-2 col-xl-1-2 columns no-left-pad">
 
-    <span class="col-m-1-3 col-l-1-2 col-xl-1-2"
+    <span class="col-m-1-2 col-l-1-2 col-xl-1-2"
           ng-class="{'nav-header': currentCase}">
 
       <a ng-class="{'active': isActive('/about')}"
@@ -17,18 +18,17 @@
       <a class="nav-header" ng-if="currentCase">{{ projects[currentCase].header }}</a>
 
     </span>
+  </span>
 
-    <span  id="list-and-tiles"
-           class="col-m-2-3 col-l-1-2 col-xl-1-2"
+  <span id="list-and-tiles"
+           class="col-m-1-2 col-l-1-2 col-xl-1-2 right-align"
            ng-if="!currentCase">
 
-      <a ng-class="{'active': isActive('/list')}"
-         ui-sref="list">List</a>
+      <!--<a ng-class="{'active': isActive('/list')}"
+         ui-sref="list">List</a>-->
 
       <a ng-class="{'active': isActive('/images')}"
-         ui-sref="images">Images</a>
-
-    </span>
+         ui-sref="images">Work</a>
 
   </span>
 

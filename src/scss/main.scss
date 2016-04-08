@@ -19,6 +19,8 @@
 
 .active { text-decoration: underline; }
 
+.right-align { text-align: right; }
+
 @media (min-width: $hd-min) and (max-width: $hd-max) {
   #main {
     top: 75px;

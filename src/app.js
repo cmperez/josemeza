@@ -9,14 +9,9 @@ angular.module('app', [
 ]).
 
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise("/list");
+  $urlRouterProvider.otherwise("/images");
 
   $stateProvider
-    .state('list', {
-      url: "/list",
-      templateUrl: "src/partials/list/list.html",
-      controller: 'ListCtrl'
-    })
     .state('images', {
       url: "/images",
       templateUrl: "src/partials/tiles/images.html",

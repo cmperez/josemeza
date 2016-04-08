@@ -1,30 +1,19 @@
 <nav id="m-nav" ng-controller="ListCtrl" class="columns">
 
-  <span class="col-s-1-2">
-
-    <a id="name"
-       ui-sref="list">Jos&eacute Meza</a>
 
     <a class="c-hand"
        ng-class="{'active': isActive('/about')}"
        ng-if="!currentCase"
        ui-sref="about">About</a>
 
-  </span>
 
-  <span class="col-s-1-2">
-
-      <a ng-class="{'active': isActive('/list')}"
+    <a class="right-align"
+         ng-class="{'active': isActive('/images')}"
          ng-if="!currentCase"
-         ui-sref="list">List</a>
+         ui-sref="images">Work</a>
 
-      <a ng-class="{'active': isActive('/images')}"
-         ng-if="!currentCase"
-         ui-sref="images">Images</a>
-
-      <a ng-if="currentCase"
+    <a ng-if="currentCase"
          ng-class="{'nav-header': currentCase}">{{ projects[currentCase].header }}</a>
 
-  </span>
 
 </nav>
