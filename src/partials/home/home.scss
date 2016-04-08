@@ -1,13 +1,52 @@
-#home {
-	position: relative;
+#home { 
 	width: 100%;
+	position: relative;
+  margin-bottom: 25px;
 }
 
 #home-content {
-	position: absolute;
-	bottom: 0%;
-    left: 0;
-	font-size: 24px;
-  	line-height: 32px;
-  	text-align: left;
+  float: left;
+	margin-bottom: 25px;
+}
+
+@media (min-width: $hd-min) and (max-width: $hd-max) {
+  #home {
+    bottom: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: $desktop-min) and (max-width: $desktop-max) {
+  #home {
+    bottom: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  #home {
+    bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $mobile-min) and (max-width: $mobile-max) {
+  #home {
+    font-size: 12px;
+    bottom: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 375px) {
+  #main {
+    font-size: 12px;
+    bottom: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
