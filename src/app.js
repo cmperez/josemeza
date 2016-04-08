@@ -12,6 +12,11 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
   $urlRouterProvider.otherwise("/images");
 
   $stateProvider
+    .state('home', {
+      url: "/home",
+      templateUrl: "src/partials/home/landing.html",
+      controller: 'ListCtrl'
+    })
     .state('images', {
       url: "/images",
       templateUrl: "src/partials/tiles/images.html",
