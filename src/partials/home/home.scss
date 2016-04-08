@@ -1,9 +1,13 @@
 #home {
-  position: absolute;
-  width: 100%;
-  bottom: 0%;
-  left: 0;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: left;
+	position: relative;
+	width: 100%;
+}
+
+#home-content {
+	position: absolute;
+	bottom: 0%;
+    left: 0;
+	font-size: 24px;
+  	line-height: 32px;
+  	text-align: left;
 }
