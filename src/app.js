@@ -14,7 +14,7 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
   $stateProvider
     .state('home', {
       url: "/home",
-      templateUrl: "src/partials/home/landing.html",
+      templateUrl: "src/partials/home/home.html",
       controller: 'ListCtrl'
     })
     .state('images', {
