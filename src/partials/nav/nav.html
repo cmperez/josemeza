@@ -16,9 +16,13 @@
          ui-sref="about">About</a>
 
       <a class="nav-header" ng-if="currentCase">{{ projects[currentCase].header }}</a>
-
     </span>
   </span>
+
+
+    <span class="col-m-1-2 col-l-1-2 col-xl-1-2 right-align">
+      <a ui-sref="images" ng-if="currentCase">Index</a>
+    </span>
 
   <span id="list-and-tiles"
            class="col-m-1-2 col-l-1-2 col-xl-1-2 right-align"

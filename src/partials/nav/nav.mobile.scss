@@ -19,7 +19,7 @@
     width: 50%;
   }
 
-  .nav-header { text-align: right;}
+  .nav-header { text-align: left;}
 }
 
 @media (min-width: $mobile-min) and (max-width: $mobile-max) {
@@ -39,7 +39,7 @@
     justify-content: space-between;
   }
 
-  .nav-header { text-align: right;}
+  .nav-header { text-align: left;}
 }
 
 @media (min-width: 0px) and (max-width: 375px) {
