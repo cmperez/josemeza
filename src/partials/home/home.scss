@@ -1,52 +1,54 @@
-#home { 
-	width: 100%;
-	position: relative;
-  margin-bottom: 25px;
+#home {
+  display: flex;
+  position: fixed;
+  bottom: 50px !important;
+  left: 100px !important;
+  width: 100%;
 }
 
-#home-content {
-  float: left;
-	margin-bottom: 25px;
+.home-content {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 @media (min-width: $hd-min) and (max-width: $hd-max) {
   #home {
-    bottom: 75px;
-    padding-left: 100px;
-    padding-right: 100px;
+    bottom: 50px !important;
+    left: 100px !important;
   }
 }
 
 @media (min-width: $desktop-min) and (max-width: $desktop-max) {
   #home {
-    bottom: 75px;
-    padding-left: 75px;
-    padding-right: 75px;
+    bottom: 50px !important;
+    left: 75px !important;
   }
 }
 
 @media (min-width: $tablet-min) and (max-width: $tablet-max) {
   #home {
-    bottom: 75px;
-    padding-left: 50px;
-    padding-right: 50px;
+    bottom: 25px !important;
+    left: 50px !important;
   }
 }
 
 @media (min-width: $mobile-min) and (max-width: $mobile-max) {
   #home {
-    font-size: 12px;
-    bottom: 75px;
-    padding-left: 25px;
-    padding-right: 25px;
+    bottom: 25px !important;
+    left: 25px !important;
+
+  .home-content { font-size: 14px !important; }
+
   }
 }
 
 @media (min-width: 0px) and (max-width: 375px) {
   #main {
-    font-size: 12px;
-    bottom: 75px;
-    padding-left: 25px;
-    padding-right: 25px;
+    bottom: 25px !important;
+    left: 25px !important;
+
+  .home-content { font-size: 12px !important; }
+
   }
 }

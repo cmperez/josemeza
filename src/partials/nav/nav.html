@@ -6,27 +6,44 @@
        ui-sref="list">Jos&eacute Meza</a>
   </span>-->
 
+  <!--<span class="col-m-1-2 col-l-2 col-xl-1-2 columns no-left-pad">
+      <a ui-sref="about" ng-if="'/home'">About</a>
+  </span>-->
+
   <span class="col-m-1-2 col-l-2 col-xl-1-2 columns no-left-pad">
+
 
     <span class="col-m-1-2 col-l-1-2 col-xl-1-2"
           ng-class="{'nav-header': currentCase}">
 
       <a ng-class="{'active': isActive('/about')}"
-         ng-if="!currentCase"
+         ng-if="!currentCase", "'/home'"
          ui-sref="about">About</a>
 
+
+      <!--<a ui-sref="about" ng-if="'/home'">About</a>-->
+
+      <!--<a ng-class="{'active': isActive('/home')}"
+         ng-if="!currentCase"
+         ui-sref="about">About</a>-->
+
       <a class="nav-header" ng-if="currentCase">{{ projects[currentCase].header }}</a>
+
     </span>
+
   </span>
 
-
-    <span class="col-m-1-2 col-l-1-2 col-xl-1-2 right-align">
-      <a ui-sref="images" ng-if="currentCase">Index</a>
-    </span>
+  <!--<span class="col-m-1-2 col-l-2 col-xl-1-2 columns no-left-pad">
+      <a ui-sref="about" ng-if="'/home'">About</a>
+  </span>-->
+  
+  <span class="col-m-1-2 col-l-1-2 col-xl-1-2 right-align">
+      <a ui-sref="images" ng-if="!currentCase">Work</a>
+  </span>
 
   <span id="list-and-tiles"
            class="col-m-1-2 col-l-1-2 col-xl-1-2 right-align"
-           ng-if="!currentCase">
+           ng-if="currentCase">
 
       <!--<a ng-class="{'active': isActive('/list')}"
          ui-sref="list">List</a>-->

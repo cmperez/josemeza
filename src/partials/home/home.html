@@ -1,5 +1,20 @@
+<nav id="nav" ng-controller="ListCtrl" class="columns">
+<span class="col-m-1-2 col-l-1-2 col-xl-1-2 left-align">
+      <a ui-sref="about" ng-if="currentCase">About</a>
+  </span>
+
+<span class="col-m-1-2 col-l-1-2 col-xl-1-2 right-align">
+      <a ui-sref="images" ng-if="currentCase">Work</a>
+  </span>
+ </nav>
+
+<nav id="m-nav" ng-controller="ListCtrl" class="columns">
+	<a ui-sref="about" ng-if="currentCase">About</a>
+	<a ui-sref="images" ng-if="currentCase">Work</a>
+</nav>
+
 <div id="home">
-    <span class="home-content">
-    Jos&eacute Meza is a designer based in San Francisco.
+	<span class="home-content">
+    <a ui-sref="images">Jos&eacute Meza is a designer based in San Francisco.</a>
     </span>
 </div>
