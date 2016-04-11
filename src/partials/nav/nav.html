@@ -10,14 +10,14 @@
       <a ui-sref="about" ng-if="'/home'">About</a>
   </span>-->
 
-  <span class="col-m-1-2 col-l-1-2 col-xl-1-2 columns no-left-pad">
+  <span class="col-m-1-2 col-l-1- 2 col-xl-1-2 columns no-left-pad">
 
 
     <span class="col-m-1-2 col-l-1-2 col-xl-1-2"
           ng-class="{'nav-header': currentCase}">
 
       <a ng-class="{'active': isActive('/about')}"
-         ng-if="!currentCase", "'/home'"
+         ng-if="!currentCase"
          ui-sref="about">About</a>
 
 
@@ -49,6 +49,7 @@
          ui-sref="list">List</a>-->
 
       <a ng-class="{'active': isActive('/images')}"
+         ng-if="currentCase"
          ui-sref="images">Work</a>
 
       <!--<span id="index">

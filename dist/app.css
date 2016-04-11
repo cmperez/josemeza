@@ -253,7 +253,7 @@ nav {
 
 @media (min-width: 1025px) and (max-width: 2440px) {
   #nav {
-    height: 75px;
+    height: 100px;
     font-size: 20px;
     padding-left: 100px;
     padding-right: 100px; }
@@ -506,10 +506,10 @@ audio, iframe, img, video {
     #home .home-content {
       font-size: 14px !important; } }
 @media (min-width: 0px) and (max-width: 375px) {
-  #main {
+  #home {
     bottom: 25px !important;
     left: 25px !important; }
-    #main .home-content {
+    #home .home-content {
       font-size: 12px !important; } }
 /** Project sheets **/
 .case-paragraph,

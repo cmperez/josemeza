@@ -115,7 +115,17 @@ angular.module('app.list', [])
       'img': 'dist/assets/compressed/Architecture/cholo 2.png',
       'width': 'img-1-3',
       'url': 'architecture'
-    }
+    },
+    'figma-process': {
+      'header': 'Figma—Process',
+      'year': '',
+      'title': '',
+      'organization': '',
+      'description': ['', ''],
+      'img': '',
+      'width': '',
+      'url': 'figma-process'
+    },
   };
 
   $scope.isActive = function(path) {
