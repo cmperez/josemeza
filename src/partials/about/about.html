@@ -1,6 +1,6 @@
 <div id="about">
   <header class="columns">
-    <span id="bio" class="s-no-pad m-no-pad col-l-1 col-xl-1">
+    <span id="bio" class="s-no-pad m-no-pad col-l-3-4 off-1-8 col-xl-3-4 off-1-5 img-">
       Jos&eacute Meza is a designer based in San Francisco. Currently, he is a member of the <a href="https://designerfund.com/bridge" target="_blank">Bridge 5</a> program and working at <a href="https://www.figma.com/" target="_blank">Figma</a> developing their visual identity.
       <br>
       <br>
@@ -9,6 +9,7 @@
       <br>
       Please <a href="mailto:jose.meza.ramos@gmail.com" target="_blank">contact</a> for freelance or work inquiries.
     </span>
+    
     <!--<span class="s-no-pad m-no-pad col-l-1-3 col-xl-1-4">
       Please <a href="mailto:jose.meza.ramos@gmail.com" target="_blank">contact</a>
       for freelance or work inquiries. A CV in pdf form can be found
@@ -17,7 +18,7 @@
   </header>
 
   <div id="about-content" class="columns">
-    <span id="hack-fix" class="s-no-pad m-no-pad col-l-1-3 col-xl-1-3">
+    <span id="hack-fix" class="s-no-pad m-no-pad col-l-1-4 off-1-8 col-xl-1-4 off-1-5 img-">
       <div class="about-header">Education</div>
       <div class="about-institutions" ng-repeat="institution in institutions">
         <div>{{ institution.name }}</div>
@@ -25,7 +26,7 @@
         <div>{{ institution.years }}</div>
       </div>
     </span>
-    <span class="s-no-pad m-no-pad col-l-1-3 col-xl-1-3">
+    <span class="s-no-pad m-no-pad col-l-1-3 col-xl-1-3 img-">
       <div class="about-header">Experience</div>
       <div class="about-jobs" ng-repeat="job in jobs">
         <div class="about-title">{{ job.title }}</div>
@@ -34,7 +35,7 @@
         <div>{{ job.duties }}</div>
       </div>
     </span>
-    <span class="s-no-pad m-no-pad col-l-1-3 col-xl-1-3 off-1-8">
+    <span class="s-no-pad m-no-pad col-l-1-3 col-xl-1-3 img-">
       <div class="about-header">Skills</div>
       <div class="about-skills" ng-repeat="skillGroup in skills">
         <div ng-repeat="skill in skillGroup" ng-class="{'about-title': $index === 0}">{{ skill }}</div>
