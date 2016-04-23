@@ -14,7 +14,9 @@
     <a ng-if="currentCase"
          ng-class="{'nav-header': currentCase}">{{ projects[currentCase].header }}</a>
 
-    <a ui-sref="images" ng-if="currentCase">Work</a>
+    <a class="right-align"
+         ng-if="currentCase"
+         ui-sref="images">Work</a>
 
 
 </nav>

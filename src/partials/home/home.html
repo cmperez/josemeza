@@ -1,4 +1,4 @@
-<nav id="nav" ng-controller="ListCtrl" class="columns">
+<!--<nav id="nav" ng-controller="ListCtrl" class="columns">
 <span class="col-m-1-2 col-l-1-2 col-xl-1-2 left-align">
       <a ui-sref="about" ng-if="currentCase">About</a>
   </span>
@@ -11,7 +11,28 @@
 <nav id="m-nav" ng-controller="ListCtrl" class="columns">
 	<a ui-sref="about" ng-if="currentCase">About</a>
 	<a ui-sref="images" ng-if="currentCase">Work</a>
+</nav>-->
+
+<nav id="nav" ng-controller="ListCtrl" class="columns">
+	<span class="col-m-1-2 col-l-1-2 col-xl-1-2 left-align">
+      <a ui-sref="about" ng-if="currentCase">About</a>
+  	</span>
+
+  	<span class="col-m-1-2 col-l-1-2 col-xl-1-2 right-align">
+      <a ui-sref="images" ng-if="currentCase">Work</a>
+  </span>
 </nav>
+
+<nav id="m-nav" ng-controller="ListCtrl" class="columns">
+	<span class="c-hand" ng-if="currentCase">
+	<a ui-sref="about">About</a>
+	</span>
+
+	<span class="right-align" ng-if="currentCase">
+    <a ui-sref="images">Work</a>
+    </span>
+</nav>
+
 
 <div id="home">
 	<span class="home-content">
