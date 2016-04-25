@@ -555,8 +555,8 @@ audio, iframe, img, video {
   text-align: center; }
 
 .case-section {
-  font-size: 20px;
-  line-height: 200%;
+  font-size: 15px;
+  line-height: 150%;
   margin-top: 25px;
   margin-bottom: 25px;
   padding-left: 12.5px;
@@ -565,7 +565,7 @@ audio, iframe, img, video {
 .case-caption {
   display: flex;
   flex-direction: column;
-  line-height: 200%;
+  line-height: 150%;
   margin-top: 12.5px;
   margin-bottom: 25px;
   padding-left: 12.5px;
