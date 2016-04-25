@@ -576,10 +576,18 @@ audio, iframe, img, video {
 
 @media (min-width: 1025px) and (max-width: 2440px) {
   #case-info {
-    flex-direction: row; } }
+    flex-direction: row; }
+
+  #previous,
+  #next {
+    font-size: 20px; } }
 @media (min-width: 769px) and (max-width: 1024px) {
   #case-info {
-    flex-direction: row; } }
+    flex-direction: row; }
+
+  #previous,
+  #next {
+    font-size: 20px; } }
 @media (min-width: 426px) and (max-width: 768px) {
   #case-info {
     flex-direction: column; }
@@ -587,7 +595,11 @@ audio, iframe, img, video {
   .case-paragraph,
   #case-info,
   #meta-info {
-    margin-bottom: 12.5px; } }
+    margin-bottom: 12.5px; }
+
+  #previous,
+  #next {
+    font-size: 18px; } }
 @media (min-width: 0px) and (max-width: 425px) {
   #case-info {
     flex-direction: column; }
@@ -597,11 +609,15 @@ audio, iframe, img, video {
   #meta-info {
     margin-bottom: 12.5px; }
 
-  .case-section {
-    font-size: 12px;
+  .case-section,
+  #previous,
+  #next {
+    font-size: 14px;
     line-height: 150%; } }
 @media (min-width: 0px) and (max-width: 320px) {
-  .case-section {
+  .case-section,
+  #previous,
+  #next {
     font-size: 12px;
     line-height: 150%; } }
 
