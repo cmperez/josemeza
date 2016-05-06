@@ -12,6 +12,9 @@ nav {
 }
 
 .nav-header { flex: 1 !important; }
+#nav.home {
+  display: none;
+}
 
 #name:focus { text-decoration: none; }
 

@@ -1,4 +1,4 @@
-<nav id="m-nav" ng-controller="ListCtrl" class="columns">
+<nav id="m-nav" ng-controller="ListCtrl" class="columns" ng-class="{'home': isActive('/home')}">
 
 
     <a class="c-hand"
@@ -6,17 +6,11 @@
        ng-if="!currentCase"
        ui-sref="about">About</a>
 
-    <a class="right-align"
-         ng-class="{'active': isActive('/images')}"
-         ng-if="!currentCase"
-         ui-sref="images">Work</a>
-
     <a ng-if="currentCase"
          ng-class="{'nav-header': currentCase}">{{ projects[currentCase].header }}</a>
 
     <a class="right-align"
-         ng-if="currentCase"
+         ng-class="{'active': isActive('/images')}"
          ui-sref="images">Work</a>
-
 
 </nav>

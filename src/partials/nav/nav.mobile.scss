@@ -1,5 +1,9 @@
 #m-nav { display: none; }
 
+#m-nav.home {
+  display: none !important;
+}
+
 @media (min-width: $tablet-min) and (max-width: $tablet-max) {
   #m-nav { display: flex; } // Show mobile/tablet nav
   #nav { display: none; }    // Hide normal nav
