@@ -118,8 +118,8 @@ angular.module('app.list', [])
     },
     'google-color': {
       'header': 'Google Color',
-      'year': '',
-      'title': '',
+      'year': '2016',
+      'title': 'Test',
       'organization': '',
       'description': ['', ''],
       'img': 'dist/assets/compressed/Architecture/cholo 2.png',
