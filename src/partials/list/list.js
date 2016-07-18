@@ -122,7 +122,7 @@ angular.module('app.list', [])
       'title': 'Test',
       'organization': '',
       'description': ['', ''],
-      'img': 'dist/assets/compressed/Architecture/cholo 2.png',
+      'img': '',
       'width': '',
       'url': 'google-color'
     },
