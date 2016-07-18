@@ -118,8 +118,8 @@ angular.module('app.list', [])
     },
     'google-color': {
       'header': 'Google Color',
-      'year': '2016',
-      'title': 'Test',
+      'year': '',
+      'title': '',
       'organization': '',
       'description': ['', ''],
       'img': '',
