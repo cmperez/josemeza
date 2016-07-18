@@ -16,14 +16,24 @@
 
   </div>
 
-  <div class="case-images columns">
-    <img src="dist/assets/compressed/Survey/narrative0.png" class="img-1" />
-    <img src="dist/assets/compressed/Survey/still 1.png" class="img-1-2" />
-    <img src="dist/assets/compressed/Survey/still 2.png" class="img-1-2" />
-    <img src="dist/assets/compressed/Survey/still 6.png" class="img-1-2" />
+  <div>
+  <gcse:search></gcse:search>
+  <gcse:searchresults defaultToImageSearch="true"></gcse:searchresults>
+    <script>
+  (function() {
+    var cx = '001472868601695894346:be4z2gv6xvi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+  </script>
   </div>
 
   <a id="previous" ng-click="goToPrevious()">Previous</a>
   <a id="next" ng-click="goToNext()">Next</a>
 
 </div>
+
