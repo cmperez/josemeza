@@ -116,15 +116,15 @@ angular.module('app.list', [])
       'width': 'img-1-3',
       'url': 'architecture'
     },
-    'figma-process': {
-      'header': 'Figma—Process',
+    'google-color': {
+      'header': 'Google Color',
       'year': '',
       'title': '',
       'organization': '',
       'description': ['', ''],
       'img': '',
       'width': '',
-      'url': 'figma-process'
+      'url': 'google-color'
     },
   };
 
