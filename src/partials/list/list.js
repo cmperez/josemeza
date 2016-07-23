@@ -116,16 +116,6 @@ angular.module('app.list', [])
       'width': 'img-1-3',
       'url': 'architecture'
     },
-    'google-color': {
-      'header': 'Google Color',
-      'year': '',
-      'title': '',
-      'organization': '',
-      'description': ['', ''],
-      'img': '',
-      'width': '',
-      'url': 'google-color'
-    },
   };
 
   $scope.isActive = function(path) {

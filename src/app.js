@@ -76,10 +76,5 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
       url: "/architecture",
       templateUrl: "src/partials/projects/architecture.html",
       controller: 'ListCtrl'
-    })
-    .state('google-color', {
-      url: "/google-color",
-      templateUrl: "src/partials/projects/google-color.html",
-      controller: 'ListCtrl'
     });
 }]);
