@@ -23,7 +23,7 @@ angular.module('app.list', [])
       'organization': 'Figma',
       'description': ['Figma is the collaborative interface design tool.','A sampling of marketing and visual design collateral for Figma\'s preview release that helped establish the company\'s emerging identity. The scope of the work includes product onboarding, a marketing website, email campaigns, and social media imagery.'],
       'img': 'dist/assets/compressed/Figma/pixel scale 2.png',
-      'width': 'img-1-2',
+      'width': 'img-1-2 off-1-8',
       'url': 'figma'
     },
     'amazon': {
