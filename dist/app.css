@@ -99,6 +99,18 @@ a {
 .off-1-2 {
   margin-left: 50%; }
 
+.top-125 {
+  margin-top: 12.5%; }
+
+.top-25 {
+  margin-top: 25%; }
+
+.top-50 {
+  margin-top: 50%; }
+
+.top-66 {
+  margin-top: 66.6666%; }
+
 @media (min-width: 1025px) and (max-width: 2440px) {
   .col-xl-1-4 {
     -webkit-box-flex: 0.25;
