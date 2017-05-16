@@ -32,6 +32,11 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
       templateUrl: "src/partials/projects/figma.html",
       controller: 'ListCtrl'
     })
+    .state('amazon', {
+      url: "/amazon",
+      templateUrl: "src/partials/projects/amazon.html",
+      controller: 'ListCtrl'
+    })
     .state('princeton-mellon', {
       url: "/princeton-mellon",
       templateUrl: "src/partials/projects/princeton-mellon.html",

@@ -26,6 +26,16 @@ angular.module('app.list', [])
       'width': 'img-1-2 off-1-8',
       'url': 'figma'
     },
+    'amazon': {
+      'header': 'Amazon',
+      'year': '2017',
+      'title': 'Self-Initiated',
+      'organization': 'Self',
+      'description': ['ibid.','ibid'],
+      'img': 'dist/assets/compressed/Amazon/N3a.png',
+      'width': 'img-1-2 off-1-8',
+      'url': 'amazon'
+    },
     'princeton-mellon': {
       'header': 'Princeton-Mellon Initiative',
       'year': '2016',
