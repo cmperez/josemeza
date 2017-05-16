@@ -33,7 +33,7 @@ angular.module('app.list', [])
       'organization': 'Self',
       'description': ['ibid.','ibid'],
       'img': 'dist/assets/compressed/Amazon/N3a.png',
-      'width': 'img-1-3 off-1-8',
+      'width': 'img-1-3',
       'url': 'amazon'
     },
     'princeton-mellon': {
