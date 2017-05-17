@@ -27,11 +27,11 @@ angular.module('app.list', [])
       'url': 'figma'
     },
     'amazon': {
-      'header': 'Amazon',
+      'header': 'Prime',
       'year': '2017',
-      'title': 'Self-Initiated',
-      'organization': 'Self',
-      'description': ['ibid.','ibid'],
+      'title': 'Imagery',
+      'organization': 'Self-Initiated',
+      'description': ['Lorem ipsum.','Lorem ipsum.'],
       'img': 'dist/assets/compressed/Amazon/N3a.png',
       'width': 'img-1-4',
       'url': 'amazon'
@@ -123,7 +123,7 @@ angular.module('app.list', [])
       'organization': 'Master of Architecture Program',
       'description': ['A selection of work created in the graduate architecture program at Princeton.', ''],
       'img': 'dist/assets/compressed/Architecture/cholo 2.png',
-      'width': 'img-1-3 off-1-4',
+      'width': 'img-1-3 off-1-4 top-125',
       'url': 'architecture'
     },
   };
