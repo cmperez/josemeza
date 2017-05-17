@@ -39,6 +39,15 @@
 .off-25 { margin-right: 25%; }
 .off-1-2 { margin-left: 50%; }
 
+// Image offsets
+// [class*='off-'] { padding-left: 12.5px; }
+
+.top-125 { margin-top: 12.5%; }
+.top-20 { margin-top: 20%; }
+.top-25 { margin-top: 25%; }
+.top-33 { margin-top: 33%; }
+.top-50 { margin-top: 50%; }
+
 @media (min-width: $hd-min) and (max-width: $hd-max) {
   .col-xl-1-4 { flex: 0.25; }
   .col-xl-1-2 { flex: 0.5; }
