@@ -31,7 +31,7 @@ angular.module('app.list', [])
       'year': '2017',
       'title': 'Imagery',
       'organization': 'Self-Initiated',
-      'description': ['Analog-digital mass-production blah blah.','Rauschenberg blah blah Pictures Generation blah blah Wade/Guyton blah blah.'],
+      'description': ['Analog-digital post-internet mass-production blah blah.','Rauschenberg blah blah Pictures Generation blah blah Wade/Guyton blah blah.'],
       'img': 'dist/assets/compressed/Amazon/N3a.png',
       'width': 'img-1-4',
       'url': 'amazon'
