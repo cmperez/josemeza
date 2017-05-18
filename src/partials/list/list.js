@@ -29,9 +29,9 @@ angular.module('app.list', [])
     'amazon': {
       'header': 'Prime Series',
       'year': '2017',
-      'title': 'Imagery',
+      'title': 'Image-Making',
       'organization': 'Self-Initiated',
-      'description': ['Through techniques of manipulating, reuse, and reconfiguring, the series combines both online and offline methods as materials for production. Analog recompositions of standardized objects for mass-online-dissemination are repurposed as subjects for a staged image series that reinforces not only the ubiquity of their very nature but also their re-appropriation. The combination of treatments serve as a vehicle for the reciprocity between picture and codification, sign and signifier.','Indebted to the hybrid of painting and sculpture in Rauschenberg\'s "Combine" work, the series also delights in exploiting digital and analog inconsistencies for aesthetic purposes as with Wade Guyton\'s digital paintings.'],
+      'description': ['Through techniques of manipulating, reuse, and reconfiguring, the series combines both online and offline methods as materials for production. Analog recompositions of standardized objects for mass-online-dissemination are repurposed as subjects for a staged image series that reinforces not only their ubiquity but also their appropriation. This combination of treatments serves as a vehicle for the reciprocal reading between picture and codification, sign and signifier.','Indebted to the hybridity of painting and sculpture in Rauschenberg\'s "Combine" work, the series also delights in exploiting digital and analog inconsistencies for aesthetic purposes as with Wade Guyton\'s digital paintings.'],
       'img': 'dist/assets/compressed/Amazon/N3a.png',
       'width': 'img-1-4',
       'url': 'amazon'
