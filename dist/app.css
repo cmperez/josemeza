@@ -282,30 +282,30 @@ a {
 @media (min-width: 1025px) and (max-width: 2440px) {
   #main {
     top: 0px;
-    padding-left: 150px;
-    padding-right: 150px; } }
+    padding-left: 160px;
+    padding-right: 160px; } }
 @media (min-width: 769px) and (max-width: 1024px) {
   #main {
     top: 0px;
-    padding-left: 100px;
-    padding-right: 100px; } }
+    padding-left: 96px;
+    padding-right: 96px; } }
 @media (min-width: 426px) and (max-width: 768px) {
   #main {
     top: 0px;
-    padding-left: 75px;
-    padding-right: 75px; } }
+    padding-left: 64px;
+    padding-right: 64px; } }
 @media (min-width: 0px) and (max-width: 425px) {
   #main {
     font-size: 12px;
     top: 0px;
-    padding-left: 25px;
-    padding-right: 25px; } }
+    padding-left: 32px;
+    padding-right: 32px; } }
 @media (min-width: 0px) and (max-width: 375px) {
   #main {
     font-size: 12px;
     top: 0px;
-    padding-left: 25px;
-    padding-right: 25px; } }
+    padding-left: 24px;
+    padding-right: 24px; } }
 /** Partial views **/
 nav > span > a:hover {
   text-decoration: underline; }
