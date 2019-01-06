@@ -298,14 +298,15 @@ a {
   #main {
     font-size: 12px;
     top: 0px;
-    padding-left: 32px;
-    padding-right: 32px; } }
-@media (min-width: 0px) and (max-width: 375px) {
+    padding-left: 40px;
+    padding-right: 40px; } }
+@media (min-width: 0px) and (max-width: 320px) {
   #main {
     font-size: 12px;
-    top: 0px;
-    padding-left: 24px;
-    padding-right: 24px; } }
+    top: 32px;
+    bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px; } }
 /** Partial views **/
 nav > span > a:hover {
   text-decoration: underline; }
@@ -655,6 +656,10 @@ audio, iframe, img, video {
   .home-content {
     font-size: 24px !important; 
     line-height: 36px !important; } }
+@media (min-width: 0px) and (max-width: 320px) {
+  .home-content {
+    font-size: 16px !important; 
+    line-height: 32px !important; } }
 /** Project sheets **/
 .case-paragraph,
 #case-info,
