@@ -617,6 +617,7 @@ audio, iframe, img, video {
   .about-jobs,
   .about-skills {
     margin-bottom: 25px; } }
+
 #home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -632,7 +633,7 @@ audio, iframe, img, video {
 
 .home-content {
   position: relative;
-  margin: 0 auto;
+  margin: auto;
   text-decoration: none;
   text-align: left;
   font-size: 48px;
