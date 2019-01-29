@@ -41,12 +41,12 @@ body {
   font-family: 'Theinhardt-Reg', Helvetica, sans-serif;
   opacity: 0;
   transition: opacity 0.25s ease; }
-  @media (min-width: 2560px) {
+  @media (min-width: 2561px) {
     body {
-      padding: 200px 440px;
+      padding: 128px 400px;
       font-size: 64px;
       line-height: 88px; } }
-  @media (min-width: 1025px) (max-width: 2560px) {
+  @media (min-width: 1025px) and (max-width: 2560px) {
     body {
       padding: 96px 200px;
       font-size: 48px;
@@ -61,14 +61,14 @@ body {
       padding: 80px;
       font-size: 32px;
       line-height: 48px; } }
-  @media (min-width: 0px) and (max-width: 425px) {
+  @media (min-width: 321px) and (max-width: 425px) {
     body {
       padding: 40px 40px;
       font-size: 24px;
       line-height: 36px; } }
   @media (min-width: 0px) and (max-width: 320px) {
     body {
-      padding: 40px 40px;
+      padding: 32px 32px;
       font-size: 16px;
       line-height: 28px; } }
 
