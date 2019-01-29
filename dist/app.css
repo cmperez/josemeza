@@ -41,7 +41,12 @@ body {
   font-family: 'Theinhardt-Reg', Helvetica, sans-serif;
   opacity: 0;
   transition: opacity 0.25s ease; }
-  @media (min-width: 1025px) {
+  @media (min-width: 2560px) {
+    body {
+      padding: 200px 440px;
+      font-size: 64px;
+      line-height: 88px; } }
+  @media (min-width: 1025px) (max-width: 2560px) {
     body {
       padding: 96px 200px;
       font-size: 48px;
@@ -53,16 +58,17 @@ body {
       line-height: 54px; } }
   @media (min-width: 426px) and (max-width: 768px) {
     body {
-      padding: 96px;
+      padding: 80px;
       font-size: 32px;
       line-height: 48px; } }
   @media (min-width: 0px) and (max-width: 425px) {
     body {
-      padding: 96px 40px;
+      padding: 40px 40px;
       font-size: 24px;
       line-height: 36px; } }
   @media (min-width: 0px) and (max-width: 320px) {
     body {
+      padding: 40px 40px;
       font-size: 16px;
       line-height: 28px; } }
 
