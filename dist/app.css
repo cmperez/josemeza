@@ -21,9 +21,7 @@ img {
 
 a {
   color: #111;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+  text-decoration: underline; }
 
 @font-face {
   font-family: Theinhardt-Reg;
