@@ -20,8 +20,10 @@ img {
   box-sizing: border-box; }
 
 a {
-  color: #111;
-  text-decoration: underline; }
+  color: #555;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 @font-face {
   font-family: Theinhardt-Reg;
