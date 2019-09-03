@@ -23,6 +23,7 @@ a {
   color: #808080;
   text-decoration: none; }
   a:hover {
+    color: #111;
     text-decoration: underline; }
 
 @font-face {
